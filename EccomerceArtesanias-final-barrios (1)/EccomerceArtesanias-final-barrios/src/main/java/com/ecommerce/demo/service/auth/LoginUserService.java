@@ -82,3 +82,33 @@ public class LoginUserService {
     }
 }
 
+@Service
+public class LoginUserService {
+    @Autowired
+    private AuditorService auditorService;
+
+    @Autowired
+    private AuditorService auditorService;
+
+    // Resto del código del servicio...
+
+    public ResponseApi doLogin(LoginUserDto loginUserDto) {
+        try {
+            // Lógica de autenticación
+        } catch (Exception e) {
+            auditorService.registrarError(loginUserDto.getEmail(), "login");
+            return new ResponseApi("Error during login", HttpStatus.INTERNAL_SERVER_ERROR, LocalDateTime.now());
+        }
+    }
+
+    // Resto del código del servicio...
+
+    public ResponseApi doLogin(LoginUserDto loginUserDto) {
+        try {
+            // Lógica de autenticación
+        } catch (Exception e) {
+            auditorService.registrarError(loginUserDto.getEmail(), "login");
+            return new ResponseApi("Error during login", HttpStatus.INTERNAL_SERVER_ERROR, LocalDateTime.now());
+        }
+    }
+}
