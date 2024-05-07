@@ -1,0 +1,12 @@
+
+1. Crear un Módulo de Auditoría: En tu proyecto de Spring Boot, crearía un nuevo paquete llamado "auditoria" para mantener todas las clases relacionadas con la funcionalidad de auditoría.
+
+2. Implementar un Servicio de Auditoría: Dentro del paquete de auditoría, crearía una clase llamada `AuditorService`. Este servicio contendría métodos para registrar eventos de errores del lado del servidor en un registro de auditoría.
+
+3. Utilizar Patrón Singleton: Podemos implementar el patrón Singleton en la clase `AuditorService` para asegurarnos de que solo haya una instancia de este servicio en la aplicación.
+
+4. Integrar con Servicio de Autenticación: Dentro de tu servicio de autenticación (`LoginUserService`), utilizaría el servicio de auditoría para registrar errores cuando ocurran durante el proceso de inicio de sesión.
+
+5. Configurar Registro de Log: Configuraría el registro de log en el archivo de configuración de Spring Boot (`application.properties`) para que los eventos de auditoría se guarden en un archivo específico.
+
+En el bosquejo, representaría cada uno de estos pasos con un diagrama de flujo o un diagrama de clases para visualizar la estructura y la interacción entre los componentes. Esto ayudaría a comprender mejor cómo se implementa la funcionalidad de auditoría en tu aplicación Spring Boot.
