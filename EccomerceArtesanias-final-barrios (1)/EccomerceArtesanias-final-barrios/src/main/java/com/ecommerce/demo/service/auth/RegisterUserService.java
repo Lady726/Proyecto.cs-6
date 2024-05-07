@@ -20,6 +20,8 @@ public class RegisterUserService {
   @Autowired
   private UserRepository userRepository;
 
+  }
+
   public ResponseApi createUser(UserRegisterDto userdto) {
 
     // Validating that it's a valid email
